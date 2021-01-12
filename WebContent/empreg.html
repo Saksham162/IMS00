@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Registration</title>
+<link rel="stylesheet" href="bootstrap-3.3.6-dist/bootstrap-3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="bootstrap-3.3.6-dist/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<link rel="icon" href="favicon.jpg">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+  	<div class="col-md-6 col-sm-12">
+    
+          <form class="form-horizontal" action="empreg.jsp" method="POST">
+          <fieldset>
+            <div class="control-group">
+              <label class="control-label" for="name">Name</label>
+              <div class="controls">
+                <input type="text" id="username" name="username" placeholder="" class="form-control input-lg" required>
+                <p class="help-block">Name can contain only letters</p>
+              </div>
+            </div>
+         <div class="control-group">
+              <label class="control-label" for="name">Password</label>
+              <div class="controls">
+                <input type="password" id="password" name="password" placeholder="" class="form-control input-lg" required>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="name">Date of Birth</label>
+              <div class="controls">
+                <input type="date" id="course" name="dob" placeholder="" class="form-control input-lg" required>
+              </div>
+            </div>
+            <label class="control-label" for="name">Edu. Qualification</label>
+              <div class="controls">
+                <input type="text" id="salary" name="eduqual" placeholder="" class="form-control input-lg" required>
+              </div>
+            <div class="control-group">
+              <label class="control-label" for="name">Email</label>
+              <div class="controls">
+                <input type="email" id="fname" name="email" placeholder="" class="form-control input-lg" required>
+				<p class="help-block">Please provide your E-mail</p>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="email">Contact No.</label>
+              <div class="controls">
+                <input type="text" id="email" name="contact_no" placeholder="" class="form-control input-lg" required>
+                
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="name">Address</label>
+              <div class="controls">
+                <input type="text" id="dob" name="address" placeholder="" class="form-control input-lg" required>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="password">Department</label>
+              <div class="controls">
+                <input type="text" id="dept" name="dept" placeholder="" class="form-control input-lg" required>
+              </div>
+              </div>
+              <div class="control-group">
+            <label class="control-label" for="name">Date of Appointment</label>
+              <div class="controls">
+                <input type="date" id="doa" name="doa" placeholder="" class="form-control input-lg" required>
+              </div>
+              </div>
+              <div class="control-group">
+            <label class="control-label" for="name">Salary</label>
+              <div class="controls">
+                <input type="number" id="salary" name="salary" placeholder="" class="form-control input-lg" required>
+              </div>
+              </div>
+         
+            <div class="control-group">
+              <!-- Button -->
+              <div class="controls" align="center">
+                <input type="submit" value="Register" class="btn btn-success">
+                <input type="reset" value="Reset" class="btn btn-danger">
+              </div>
+            </div>
+            
+          </fieldset>
+        </form>
+    </div>
+    </div>
+    </div> 
+</body>
+</html>

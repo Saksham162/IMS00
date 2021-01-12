@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback</title>
+<link rel="stylesheet" href="bootstrap-3.3.6-dist/bootstrap-3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="bootstrap-3.3.6-dist/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<link rel="icon" href="favicon.jpg">
+<script>
+     $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+	</script>
+<style>
+img{
+width:50%;
+height:50%;
+}
+body{
+background: url(feedback.jpg); 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+#bg{
+opacity:0.8;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img class="img-responsive img-circle"       
+           src="SSCBS_logo.jpg"></a>
+           <a class="navbar-brand" href="index.html">CMS</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about_us.html"><span class="glyphicon glyphicon-info-sign"></span> About</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html"><span class="glyphicon glyphicon-envelope"></span> Feedback</a>
+                    </li>
+                    <li>
+                        <a href="contact_us.html"><span class="glyphicon glyphicon-phone-alt"></span> Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+         		<li class="active"><a href="home.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+         		<li><a href="reg.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      			</ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav> 
+<div id="bg" class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="feedback form">
+<fieldset>
+
+<legend>Feedback form</legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">select the role that best describes you at college</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input">
+      <textarea class="form-control" rows="3" required></textarea>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >what do you like about the college website</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input">
+  <textarea class="form-control" rows="3" required></textarea>
+    </div>
+  </div>
+</div>
+
+  <div class="form-group">
+  <label class="col-md-4 control-label">additional comment</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input">
+         <textarea class="form-control" rows="3" required></textarea>
+    </div>
+  </div>
+</div>
+ <div class="form-group">
+  <label class="col-md-4 control-label">E-mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <input type="email" name="E-mail" >
+    </div>
+  </div>
+</div>
+
+  <input type ="Submit" value="Submit" class="btn btn-success center-block">
+  </fieldset>
+  </form>
+  <br>
+  <footer class="footer">
+      <div style="display:inline;"class="container">
+        <pre>Copyright &copy;                          <i id="demo"></i></pre>
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+      </div>
+    </footer>
+</footer>
+  </div>

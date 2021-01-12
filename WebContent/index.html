@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SSCBS</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <link href="half-slider.css" rel="stylesheet">
+    <script>
+     $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+	</script>
+	<style>
+	#big::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+img{
+width:50%;
+height:50%;
+}
+	</style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img class="img-responsive img-circle"       
+           src="SSCBS_logo.jpg"></a>
+           <a class="navbar-brand" href="index.html">CMS</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about_us.html"><span class="glyphicon glyphicon-info-sign"></span> About</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html"><span class="glyphicon glyphicon-envelope"></span> Feedback</a>
+                    </li>
+                    <li>
+                        <a href="contact_us.html"><span class="glyphicon glyphicon-phone-alt"></span> Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+         		<li><a href="stusignin.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+         		<li><a href="reg.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      			</ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Half Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('cms.png');"></div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('class.jpg');"></div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Welcome User</h2>
+                <p id="big"></p>
+            </div>
+        </div>
+        <div class="col-md-12 text-center" style="display:inline-block">
+        	<a style="display:inline-block" class="btn btn-info center-block" href="home.html">Login</a>
+        	<a style="display:inline-block" class="btn btn-success center-block" href="reg.html">Register</a>
+        </div>
+<br>
+        <!-- Footer -->
+        <footer class="footer">
+      <div style="display:inline;"class="container">
+        <pre>Copyright &copy;                        <i id="demo"></i></pre>
+
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+      </div>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>
